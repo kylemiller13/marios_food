@@ -5,7 +5,7 @@
 ## Technologies Used
 
 * Ruby-on-Rails
-* Ruby Gems: Rspec, Pry, Capybara
+* Ruby Gems: Rspec, Pry, Capybara, Faker, shoulda-matchers 
 * HTML
 * Postgres
 * PSQL 
