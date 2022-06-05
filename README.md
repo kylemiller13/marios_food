@@ -24,7 +24,7 @@ _This application was created to demonstrate my understanding of one-to-many rel
 ```
 development:
   <<: *default
-database: rails_record_store_development 
+database: marios-food_development
 username: <%= ENV['POSTGRES_USERNAME'] %> 
 password: <%= ENV['POSTGRES_PASSWORD'] %> 
 ```
