@@ -1,24 +1,47 @@
-# README
+# Mario's Specialty Food Products
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By Kyle Miller
 
-Things you may want to cover:
+## Technologies Used
 
-* Ruby version
+* Ruby-on-Rails
+* Ruby Gems: Rspec, Pry, Capybara
+* HTML
+* Postgres
+* PSQL 
 
-* System dependencies
+## Description:
+_This application was created to demonstrate my understanding of one-to-many relationship between Products and Reviews using scopes, validations, callbacks, seeding, and flash messages._
 
-* Configuration
+## Setup/Installation Requirements for Windows
 
-* Database creation
+* Clone or download this repository onto your desktop.
+* Navigate to the top-level of directory.
+* Open VScode.
+* Type "bundle" to install the gems
+* In `Config/database.yml` file, add username & password to the `development:`, `test:`, & `production:`
+* An Example:  
+```
+development:
+  <<: *default
+database: rails_record_store_development 
+username: <%= ENV['POSTGRES_USERNAME'] %> 
+password: <%= ENV['POSTGRES_PASSWORD'] %> 
+```
+* **To Run Tests**: In the root directory of this project, run `rspec` in your command line.
+* **To Run the App in Browser**: 
+  1. `rake db:create`
+  2. `rake db:test:prepare`
+  3. `rake db:migrate`
+  4. `rake db:seed`
+  5. Run `pg_ctl start` in the terminal to run a server. 
+  6. Then run `rails s` to start up rails, which you can access by entering `localhost:3000` in your browser.
 
-* Database initialization
+## Known Bugs
 
-* How to run the test suite
+- _N/A_
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
-
-* ...
+- N/A Copyright (c) 6/5/2022, Kyle Miller
+- _[MIT](https://opensource.org/licenses/MIT)_
