@@ -6,7 +6,7 @@ Review.destroy_all
   cost: Faker::Number.decimal(l_digits: 2),
   country_of_origin: Faker::Address.country
 )
-  250.times do
+  5.times do
     Review.create!(
     author: Faker::Name.name,
     content_body: Faker::Lorem.paragraph_by_chars(number:50),
