@@ -7,7 +7,7 @@
                   :data => {:confirm => "Are you sure?",
                   :method => "delete"}  %></button>
 <button class="btn btn-success"><%= link_to "Write a Review", new_product_review_path(@product.id) %></button>
-<button class="btn btn-success"><%= link_to "Front Page", products_path(@product) %></button>
+ <button class="btn btn-success"><%= link_to "Home", root_path %></button>
 
 <ul>
   <% if @reviews.any? %>
