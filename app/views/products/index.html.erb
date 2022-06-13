@@ -1,8 +1,7 @@
-  <h1>Mario's Foods</h1>
+  <h1>Mario's Products</h1>
 
-  <a href="?sort=:ten_most_recent"><button class="btn btn-success">Most recently added</button></a>
-  <a href="?sort=most_reviews"><button class="btn btn-success">Most reviews</button></a>
-  <a href="?sort=from_usa"><button class="btn btn-success">Made in USA</button></a>
+  <button class="btn btn-success"><%= link_to "Home", root_path %></button>
+  <button class="btn btn-success"><%= link_to "Create New Product", new_product_path %></button>
 
 
   <h2>Products</h2>
@@ -17,4 +16,3 @@
         <p>There are currently no products to display.</p>
       <% end %>
   </div>
-  <button class="btn btn-success"><%= link_to "Create New Product", new_product_path %></button>
