@@ -1,0 +1,16 @@
+<h1>Mario's Foods</h1>
+<h3>Welcome to Mario's Specialty Food Products.</h3>
+  <a href="?sort=:ten_most_recent"><button class="btn btn-success">Most recently added</button></a>
+  <a href="?sort=most_reviews"><button class="btn btn-success">Most reviews</button></a>
+  <a href="?sort=from_usa"><button class="btn btn-success">Made in USA</button></a>
+  <button class="btn btn-success"><%= link_to "All Products", products_path %></button>
+  <button class="btn btn-success"><%= link_to "Create New Product", new_product_path %></button>
+  <ul>
+    <% if @products.any? %>
+      <% @products.each do |p| %>
+        <li><%= link_to p.name, product_path(p) %></li>
+      <% end %>
+  </ul>
+    <% else %>
+      <p>There are currently no products to display.</p>
+    <% end %>
