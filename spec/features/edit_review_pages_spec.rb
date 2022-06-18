@@ -1,6 +1,17 @@
 require 'rails_helper'
 
 describe "edit a review" do
+  before(:each) do 
+    visit new_product_path
+    click_link 'Register'
+    fill_in 'user_email', with: 'userEmail@gmail.com'
+    fill_in 'user_password', with: 'password'
+    fill_in 'user_password_confirmation', with: 'password'
+    click_button 'Sign up'
+    @user = User.last
+    @user.update(admin: true)
+  end
+
   it "edits a review" do
     product = Product.create(:name => 'Apple', :cost => '70.00', :country_of_origin => 'USA')
     review = Review.create(:author => 'Kyle', :content_body => 'Et quia amet. Animi voluptatem perferendis. Eaque.', :rating => '3', :product_id => product.id)
