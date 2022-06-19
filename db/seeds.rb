@@ -1,5 +1,9 @@
 Product.destroy_all
 Review.destroy_all
+User.destroy_all
+
+admin = User.create!(:email => 'admin@gmail.com', :password => 'password123', :admin => true)
+user = User.create!(:email => 'user@gmail.com', :password => 'password1234')
 50.times do 
   product = Product.create!(
   name: Faker::Food.unique.ingredient,
