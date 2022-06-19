@@ -7,7 +7,7 @@
 * Ruby-on-Rails
 * Ruby Gems: Rspec, Pry, Capybara, Faker, shoulda-matchers, Devise 
 * HTML
-* Postgres
+* CSS
 * PSQL 
 
 ## Description:
