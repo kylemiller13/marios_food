@@ -30,11 +30,11 @@ password: <%= ENV['POSTGRES_PASSWORD'] %>
 ```
 * **To Run Tests**: In the root directory of this project, run `rspec` in your command line.
 * **To Run the App in Browser**: 
-  1. `rake db:create`
-  2. `rake db:test:prepare`
-  3. `rake db:migrate`
-  4. `rake db:seed`
-  5. Run `pg_ctl start` in the terminal to run a server. 
+  1. Run `pg_ctl start` in the terminal to run a server. 
+  2. `rake db:create`
+  3. `rake db:test:prepare`
+  4. `rake db:migrate`
+  5. `rake db:seed`
   6. Then run `rails s` to start up rails, which you can access by entering `localhost:3000` in your browser.
 
 ## Admin Setup 
